@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <h1>Your To Do List</h1>
+    <div class="front">
+        <label for="Add_task">Add Task</label>
+        <input type="text" id="Add_task" placeholder="Add Your Task">
+
+        <label for="Start_Doing_Work">Start Doing Work</label>
+        <input type="text" id="Start_Doing_Work" placeholder="Start Doing Work">
+
+        <label for="Complete_Doing_Work">Complete Doing Work</label>
+        <input type="text" id="Complete_Doing_Work" placeholder="Complete Doing Work">
+
+        <div class="todo-container">
+            <div class="column" id="list-works">
+                <h2>List of Works</h2>
+            </div>
+            <div class="column" id="ongoing-works">
+                <h2>Works Ongoing</h2>
+            </div>
+            <div class="column" id="completed-works">
+                <h2>Completed Works</h2>
+            </div>
+        </div>
+        <button id="clear">Clear</button>
+    </div>
+    <script src="sc.js"></script>
+</body>
+</html>
