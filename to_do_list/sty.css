@@ -1,0 +1,151 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the font family of the text to Arial, and if that's unavailable, it falls back to sans-serif */
+    background: #c91313; /* Sets the background color of the page to a red color (#c91313) */
+    color: #333; /* Sets the text color to a dark gray (#333) */
+    margin: 0; /* Removes any default margin around the body */
+    padding: 0; /* Removes any default padding inside the body */
+    display: flex; /* Applies Flexbox to the body to easily align elements */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Sets the height of the body to 100% of the viewport height */
+    flex-direction: column; /* Arranges the items in a column, stacking them vertically */
+}
+
+/* Title */
+h1 {
+    font-size: 2.5em; /* Sets the font size of the <h1> (title) to 2.5 times the base font size */
+    color: #333; /* Sets the color of the title to dark gray (#333) */
+    margin-bottom: 20px; /* Adds a 20px space below the title */
+}
+
+/* Input Section */
+.front {
+    width: 80%; /* Sets the width of the .front container to 80% of its parent element (body) */
+    max-width: 900px; /* Sets a maximum width of 900px, ensuring it doesn't get too wide */
+    background: #fff; /* Sets the background color of the input container to white */
+    padding: 20px; /* Adds 20px of padding inside the container */
+    border-radius: 10px; /* Rounds the corners of the container with a 10px radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect to the container */
+}
+
+/* Input Label and Field */
+label {
+    font-size: 1.2em; /* Sets the font size of the label to 1.2 times the base font size */
+    display: block; /* Makes the label a block element so it takes up the full width */
+    margin-bottom: 10px; /* Adds 10px space below the label */
+}
+
+#Add_task {
+    width: 100%; /* Makes the input field take up the full width of its container */
+    padding: 10px; /* Adds 10px of padding inside the input field */
+    font-size: 1em; /* Sets the font size of the text inside the input field */
+    margin-bottom: 20px; /* Adds 20px space below the input field */
+    border-radius: 5px; /* Rounds the corners of the input field with a 5px radius */
+    border: 1px solid #ddd; /* Adds a 1px solid border with a light gray color */
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50; /* Sets the background color of the button to green (#4CAF50) */
+    color: white; /* Sets the text color of the button to white */
+    padding: 10px 20px; /* Adds 10px vertical padding and 20px horizontal padding inside the button */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the button with a 5px radius */
+    cursor: pointer; /* Changes the cursor to a pointer (hand) when hovered over the button */
+    font-size: 1em; /* Sets the font size of the button text */
+    margin: 5px; /* Adds a 5px margin around the button */
+    transition: background-color 0.3s; /* Smoothly transitions the background color when hovering */
+}
+
+button:hover {
+    background-color: #45a049; /* Changes the background color of the button to a slightly darker green when hovered */
+}
+
+/* Clear Button */
+#clear {
+    background-color: #ff6347; /* Sets the background color of the clear button to a tomato red */
+    margin-top: 20px; /* Adds a 20px space above the clear button */
+    width: 100%; /* Makes the clear button take up the full width of the container */
+}
+
+#clear:hover {
+    background-color: #e5533e; /* Changes the background color to a darker red when hovered */
+}
+
+/* Container for the columns */
+.todo-container {
+    display: flex; /* Uses Flexbox to arrange the columns horizontally */
+    justify-content: space-around; /* Spaces out the columns evenly with space around them */
+    align-items: flex-start; /* Aligns the columns to the top of the container */
+    flex-wrap: nowrap; /* Prevents the columns from wrapping to the next line */
+    margin-top: 20px; /* Adds 20px space above the columns */
+}
+
+/* Styling for Each Column */
+.column {
+    flex: 1; /* Makes each column take up equal space in the container */
+    padding: 15px; /* Adds 15px of padding inside each column */
+    border-radius: 10px; /* Rounds the corners of the columns with a 10px radius */
+    min-height: 250px; /* Ensures the columns have at least 250px of height */
+    max-height: 400px; /* Limits the columns' height to 400px */
+    overflow-y: auto; /* Enables vertical scrolling if the content exceeds the column height */
+    margin: 10px; /* Adds 10px of space between each column */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect around each column */
+}
+
+/* Colors for Each Column */
+#list-works {
+    background: #feca57; /* Sets a yellow background for the List of Works column */
+}
+
+#ongoing-works {
+    background: #48dbfb; /* Sets a light blue background for the Ongoing Works column */
+}
+
+#completed-works {
+    background: #1dd1a1; /* Sets a light green background for the Completed Works column */
+}
+
+/* Task Styling */
+.task {
+    background: white; /* Sets the background color of each task to white */
+    padding: 10px; /* Adds 10px of padding inside each task */
+    margin: 8px 0; /* Adds 8px space above and below each task */
+    border-radius: 5px; /* Rounds the corners of each task with a 5px radius */
+    display: flex; /* Uses Flexbox to arrange the task's content horizontally */
+    justify-content: space-between; /* Spaces out the elements in the task (text, buttons) */
+    align-items: center; /* Aligns the elements in the task vertically */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect around each task */
+}
+
+/* Task Text Styling */
+.task span {
+    font-size: 1.1em; /* Increases the font size of the task text */
+    color: #333; /* Sets the task text color to dark gray */
+}
+
+/* Button Inside Tasks */
+.task button {
+    background-color: #f39c12; /* Sets the button color inside tasks to orange */
+    color: white; /* Makes the button text color white */
+    padding: 6px 12px; /* Adds 6px vertical and 12px horizontal padding inside the button */
+    border-radius: 3px; /* Rounds the corners of the task button with a 3px radius */
+    cursor: pointer; /* Changes the cursor to a pointer when hovered over the button */
+    font-size: 0.9em; /* Sets the font size of the button text */
+    transition: background-color 0.3s; /* Smoothly transitions the background color when hovered */
+}
+
+/* Task Button Hover */
+.task button:hover {
+    background-color: #e67e22; /* Changes the button color to a darker orange when hovered */
+}
+
+/* Task Delete Button */
+.task button:nth-child(2) {
+    background-color: #e74c3c; /* Sets the delete button color to red */
+}
+
+.task button:nth-child(2):hover {
+    background-color: #c0392b; /* Changes the delete button color to a darker red when hovered */
+}
